@@ -27,7 +27,7 @@ var (
 	NCHUNKS = 720
 	CHUNKSZ = 0
 	NTASKS  = 0
-	pmemFile = flag.String("file", "fkr_pmem", "fkr_pmem file name")
+	pmemFile = flag.String("file", "pmemtest", "pmemtest file name")
 )
 var n = 12
 var Fact []int

@@ -16,7 +16,7 @@
 	"github.com/vmware/go-pmem-transaction/pmem"
 	// "github.com/vmware/go-pmem-transaction/transaction"
  )
- var pmemFile = flag.String("file", "bt_pmem_r", "bt_pmem_r file name")
+ var pmemFile = flag.String("file", "pmemtest", "pmemtest file name")
 
  var n = 0
  var nodes_allocd = 0

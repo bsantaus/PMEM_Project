@@ -156,7 +156,7 @@ bool file_exists(const std::string &path) {
 int main(int argc, char ** argv)
 {
 
-  std::string path = "nbpmemmm";
+  std::string path = "pmemtest";
 
    if (file_exists(path)) {
       std::cout << "opening existing pmem file\n";

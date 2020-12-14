@@ -182,7 +182,7 @@ bool file_exists(const std::string &path) {
 int main(int argc, char **argv)
 {
 
-    std::string path = "fkr_cpp";
+    std::string path = "pmemtest";
     const auto n = atoi(argv[1]);
 
 

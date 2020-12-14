@@ -36,7 +36,7 @@ func (b *Body) offsetMomentum(px, py, pz float64) {
 
 type System []*Body
 var system System
-var pmemFile = flag.String("file", "nb_pmem", "nb_pmem file name")
+var pmemFile = flag.String("file", "pmemtest", "pmemtest file name")
 
 
 func resetSystem(n System, body []Body) System {
