@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const int64_t iterations = 50000;
+const int64_t iterations = 2000;
 const int64_t MAX_CAP = 50000;
 const int64_t default_cap = 2500;
 
@@ -25,8 +25,9 @@ int main(int argc, char **argv)
             newcap = default_cap;
         }
         rv.resize(newcap);
-        if (j == iterations - 1) cout << sum << endl;
     }
+
+    cout << "done" << endl;
 
     return 0;
 }

@@ -20,12 +20,13 @@ func Init(cap int32) *PVector {
     var c int = 2500
 
     if pv == nil {
-        pv = (*PVector)(pmem.New("pvec", pv))
-        pv.capacity = cap
-        pv.arr = pmem.Make("pvec_slice", pv.arr, c).([]int32)
-        return pv
+        txn("undo") {
+            pv = (*PVector)(pmem.New("pvec", pv))
+            pv.capacity = cap
+            pv.arr = pmem.Make("pvec_slice", pv.arr, c).([]int32)
+            return pv
+        }
     }
-
     return pv
 } 
 
@@ -69,7 +70,7 @@ func (pv *PVector) reset(sz int32) {
 }
 
 
-var iterations int32 = 50000
+var iterations int32 = 4000
 var MAX_CAP int32 = 50000
 var default_cap int32 = 2500
 
@@ -80,7 +81,7 @@ func main() {
     flag.Parse()
     firstInit := pmem.Init(*pmemFile)
 	if firstInit {
-        println("new")
+
         pv = Init(default_cap)
         iter = (*int32)(pmem.New("iter", iter))
         *iter = 0
@@ -89,12 +90,13 @@ func main() {
         iter = (*int32)(pmem.Get("iter", iter))
 
         if pv == nil {
-            println("new")
             pv = Init(default_cap)
         }
         if iter == nil {
-            iter = (*int32)(pmem.New("iter", iter))
-            *iter = 0
+            txn("undo") {
+                iter = (*int32)(pmem.New("iter", iter))
+                *iter = 0
+            }
         }
         if *iter == 50000 {
             *iter = 0
@@ -118,5 +120,7 @@ func main() {
             pv.resize(newcap)
             (*iter)++
         }
-	}
+    }
+    
+    println("done")
 }

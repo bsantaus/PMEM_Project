@@ -43,8 +43,8 @@ PVector<T>::PVector() {
         for (int i = 0; i < 10; i++) {
             arr[i] = 0;
         }
+        capacity = 10;
     });
-    capacity = 10;
 }
 
 template <class T>
@@ -55,8 +55,8 @@ PVector<T>::PVector(size_t init_cap) {
         for (int i = 0; i < init_cap; i++) {
             arr[i] = 0;
         }
+        capacity = init_cap;
     });
-    capacity = init_cap;
 }
 
 template <class T>
@@ -77,8 +77,8 @@ void PVector<T>::resize(size_t new_size) {
         for (int i = 0; i < elems_copied; i++) new_arr[i] = arr[i];
         delete_persistent<T[]>(arr, capacity);
         arr = new_arr;
+        capacity = new_size;
     });
-    capacity = new_size;
 }
 
 template <class T>
@@ -88,7 +88,7 @@ void PVector<T>::reset(size_t new_size) {
         delete_persistent<T[]>(arr, capacity);
         arr = make_persistent<T[]>(new_size);
         for (int i = 0; i < new_size; i++) arr[i] = 0;
+        capacity = new_size;
     });
-    capacity = new_size;
 }
 

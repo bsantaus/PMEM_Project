@@ -47,7 +47,7 @@ func (rv *RVector) resize(sz int32) {
 	rv.capacity = sz
 }   
 
-var iterations int32 = 50000
+var iterations int32 = 4000
 var MAX_CAP int32 = 50000
 var default_cap int32 = 2500
 
@@ -67,8 +67,7 @@ func main() {
 			newcap = default_cap
 		}
 		rv.resize(newcap)
-		if (j == iterations - 1) {
-			println(sum)
-		}
 	}
+
+	println("done")
 }
