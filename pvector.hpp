@@ -24,7 +24,7 @@ class PVector {
         
         size_t cap() { return capacity; }
         void resize(size_t size);
-        T get(int index) { return arr[index]; }
+        T& get(int index) { return arr[index]; }
         void set(int index, T value) { arr[index] = value; }
         T* begin() { return &arr[0]; }
         void reset(size_t sz);
@@ -40,9 +40,9 @@ PVector<T>::PVector() {
     auto pool = pool_by_vptr(this);
     transaction::run(pool, [this] {
         arr = make_persistent<T[]>(10);
-        for (int i = 0; i < 10; i++) {
-            arr[i] = 0;
-        }
+        // for (int i = 0; i < 10; i++) {
+        //     arr[i] = 0;
+        // }
         capacity = 10;
     });
 }
@@ -52,9 +52,9 @@ PVector<T>::PVector(size_t init_cap) {
     auto pool = pool_by_vptr(this);
     transaction::run(pool, [this, init_cap] {
         arr = make_persistent<T[]>(init_cap);
-        for (int i = 0; i < init_cap; i++) {
-            arr[i] = 0;
-        }
+        // for (int i = 0; i < init_cap; i++) {
+        //     arr[i] = 0;
+        // }
         capacity = init_cap;
     });
 }
@@ -87,7 +87,7 @@ void PVector<T>::reset(size_t new_size) {
     transaction::run(pool, [this, new_size] {
         delete_persistent<T[]>(arr, capacity);
         arr = make_persistent<T[]>(new_size);
-        for (int i = 0; i < new_size; i++) arr[i] = 0;
+        // for (int i = 0; i < new_size; i++) arr[i] = 0;
         capacity = new_size;
     });
 }

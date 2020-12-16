@@ -61,6 +61,7 @@ def kill_proc_test(prog, killint, kills):
                 total = total + (k - start)
                 times_k = times_k + 1
                 print("killed {}, relaunching".format(prog))
+                time.sleep(1)
                 start = time.time()
                 proc = subprocess.Popen([prog], stdout=subprocess.PIPE)
         if not finished:
@@ -90,10 +91,10 @@ def run_crash_test(um, pmem, u, p):
 
 subprocess.call(["make"])
 
-(ug,pg) = get_averages("./cc_ram_go", "./cc_pmem_go")
-f.write("./cc_ram_go Average Time: {}\n./cc_pmem_go Average Time: {}\n".format(ug,pg))
+# (ug,pg) = get_averages("./cc_ram_go", "./cc_pmem_go")
+# f.write("./cc_ram_go Average Time: {}\n./cc_pmem_go Average Time: {}\n".format(ug,pg))
 (uc,pc) = get_averages("./cc_ram_cpp", "./cc_pmem_cpp")
 f.write("./cc_ram_cpp Average Time: {}\n./cc_pmem_cpp Average Time: {}\n".format(uc,pc))
-run_crash_test("./cc_ram_go", "./cc_pmem_go", ug, pg)
+# run_crash_test("./cc_ram_go", "./cc_pmem_go", ug, pg)
 run_crash_test("./cc_ram_cpp", "./cc_pmem_cpp", uc, pc)
 

@@ -106,8 +106,8 @@ def run_ascending_tests(outputfile):
 
 
 
-repeat_file = open("test_output/consistent.csv", "w+")
-ascend_file = open("test_output/ascend.csv", "w+")
+# repeat_file = open("test_output/consistent.csv", "w+")
+# ascend_file = open("test_output/ascend.csv", "w+")
 
 repeat_file.write(header)
 ascend_file.write(header)

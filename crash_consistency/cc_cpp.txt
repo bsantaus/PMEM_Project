@@ -1,0 +1,89 @@
+./cc_ram_cpp Average Time: 4.384773540496826
+./cc_pmem_cpp Average Time: 40.30107913017273
+./cc_pmem_cpp 1 Results:
+./cc_ram_cpp Realtime: 5.682440996170044, killed 1 times
+./cc_pmem_cpp Realtime: 36.268836975097656, killed 1 times
+./cc_pmem_cpp 2 Results:
+./cc_ram_cpp Realtime: 7.9425458908081055, killed 2 times
+./cc_pmem_cpp Realtime: 40.764352560043335, killed 2 times
+./cc_pmem_cpp 3 Results:
+./cc_ram_cpp Realtime: 10.282649278640747, killed 3 times
+./cc_pmem_cpp Realtime: 39.001696825027466, killed 3 times
+./cc_pmem_cpp 4 Results:
+./cc_ram_cpp Realtime: 11.810883522033691, killed 4 times
+./cc_pmem_cpp Realtime: 38.59174108505249, killed 4 times
+./cc_pmem_cpp 5 Results:
+./cc_ram_cpp Realtime: 13.839195013046265, killed 5 times
+./cc_pmem_cpp Realtime: 38.95485544204712, killed 5 times
+./cc_pmem_cpp 6 Results:
+./cc_ram_cpp Realtime: 16.245018482208252, killed 6 times
+./cc_pmem_cpp Realtime: 39.93003225326538, killed 6 times
+./cc_pmem_cpp 7 Results:
+./cc_ram_cpp Realtime: 17.96926760673523, killed 7 times
+./cc_pmem_cpp Realtime: 41.77158784866333, killed 7 times
+./cc_pmem_cpp 8 Results:
+./cc_ram_cpp Realtime: 19.95340323448181, killed 8 times
+./cc_pmem_cpp Realtime: 40.10244178771973, killed 8 times
+./cc_pmem_cpp 9 Results:
+./cc_ram_cpp Realtime: 22.060853004455566, killed 9 times
+./cc_pmem_cpp Realtime: 39.96473240852356, killed 9 times
+./cc_pmem_cpp 10 Results:
+./cc_ram_cpp Realtime: 24.193605661392212, killed 10 times
+./cc_pmem_cpp Realtime: 42.7118935585022, killed 10 times
+./cc_pmem_cpp 11 Results:
+./cc_ram_cpp Realtime: 26.20335865020752, killed 11 times
+./cc_pmem_cpp Realtime: 40.644474506378174, killed 11 times
+./cc_pmem_cpp 12 Results:
+./cc_ram_cpp Realtime: 27.723389387130737, killed 12 times
+./cc_pmem_cpp Realtime: 40.72126913070679, killed 12 times
+./cc_pmem_cpp 13 Results:
+./cc_ram_cpp Realtime: 30.32205367088318, killed 13 times
+./cc_pmem_cpp Realtime: 42.39995241165161, killed 13 times
+./cc_pmem_cpp 14 Results:
+./cc_ram_cpp Realtime: 32.083444356918335, killed 14 times
+./cc_pmem_cpp Realtime: 44.9419424533844, killed 14 times
+./cc_pmem_cpp 15 Results:
+./cc_ram_cpp Realtime: 34.13208341598511, killed 15 times
+./cc_pmem_cpp Realtime: 44.68055987358093, killed 15 times
+./cc_pmem_cpp 16 Results:
+./cc_ram_cpp Realtime: 38.06720995903015, killed 16 times
+./cc_pmem_cpp Realtime: 58.00454497337341, killed 16 times
+./cc_pmem_cpp 17 Results:
+./cc_ram_cpp Realtime: 38.489007234573364, killed 17 times
+./cc_pmem_cpp Realtime: 53.69536304473877, killed 17 times
+./cc_pmem_cpp 18 Results:
+./cc_ram_cpp Realtime: 40.24967908859253, killed 18 times
+./cc_pmem_cpp Realtime: 43.8704469203949, killed 18 times
+./cc_pmem_cpp 19 Results:
+./cc_ram_cpp Realtime: 42.135375022888184, killed 19 times
+./cc_pmem_cpp Realtime: 45.51067304611206, killed 19 times
+./cc_pmem_cpp 20 Results:
+./cc_ram_cpp Realtime: 44.02756690979004, killed 20 times
+./cc_pmem_cpp Realtime: 39.454426527023315, killed 20 times
+./cc_pmem_cpp 21 Results:
+./cc_ram_cpp Realtime: 46.1674919128418, killed 21 times
+./cc_pmem_cpp Realtime: 41.6132025718689, killed 21 times
+./cc_pmem_cpp 22 Results:
+./cc_ram_cpp Realtime: 47.74256944656372, killed 22 times
+./cc_pmem_cpp Realtime: 44.25775074958801, killed 22 times
+./cc_pmem_cpp 23 Results:
+./cc_ram_cpp Realtime: 50.18994688987732, killed 23 times
+./cc_pmem_cpp Realtime: 1.636162519454956, killed 1 times
+./cc_pmem_cpp 24 Results:
+./cc_ram_cpp Realtime: 52.14136362075806, killed 24 times
+./cc_pmem_cpp Realtime: 16.784926891326904, killed 16 times
+./cc_pmem_cpp 25 Results:
+./cc_ram_cpp Realtime: 54.041176319122314, killed 25 times
+./cc_pmem_cpp Realtime: 46.73015880584717, killed 25 times
+./cc_pmem_cpp 26 Results:
+./cc_ram_cpp Realtime: 55.82350754737854, killed 26 times
+./cc_pmem_cpp Realtime: 42.01523017883301, killed 26 times
+./cc_pmem_cpp 27 Results:
+./cc_ram_cpp Realtime: 57.82180571556091, killed 27 times
+./cc_pmem_cpp Realtime: 46.271254777908325, killed 27 times
+./cc_pmem_cpp 28 Results:
+./cc_ram_cpp Realtime: 59.65658235549927, killed 28 times
+./cc_pmem_cpp Realtime: 42.66137337684631, killed 28 times
+./cc_pmem_cpp 29 Results:
+./cc_ram_cpp Realtime: 62.62032413482666, killed 29 times
+./cc_pmem_cpp Realtime: 2.6431033611297607, killed 2 times
